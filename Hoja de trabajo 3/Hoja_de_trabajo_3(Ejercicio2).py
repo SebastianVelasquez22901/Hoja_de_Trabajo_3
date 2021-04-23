@@ -12,24 +12,22 @@ def Seccion(s,n):
 
     if letra11 == "f":
         print("Es femenino")
-        for a in seccionaAFemenino:
-            if a == letra22 :
-                print("Es de la seccion A")
-            
-            else: 
-                print("Es de la seccion B")
-            break 
+        for n in seccionaAFemenino:
+            if n == letra22:
+                print(nombre, "Es de la seccion A")
+                break
+        else:
+            print("Es de la seccion B")
         return False
 
     elif letra11 == "m":
         print("Es masculino")
-        for b in seccionAMasculino:
-            if b == letra22 :
-                print("Es de la seccion A")
-            
-            else: 
-                print("Es de la seccion B")
-            break
+        for n in seccionAMasculino:
+            if n == letra22:
+                print(nombre, "Es de la seccion A")
+                break
+        else:
+            print("Es de la seccion B")
         return False
 
     return True
